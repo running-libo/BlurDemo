@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="305dp"
+        android:layout_margin="10dp"
+        android:id="@+id/rl_setup_box"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="5dp">
+
+        <ImageView
+            android:id="@+id/iv_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/round_shape_halftrans"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="镜头速度"
+                    android:textColor="@color/white"
+                    android:layout_centerVertical="true"
+                    android:textSize="14sp"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_camera_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:layout_centerVertical="true">
+
+                    <RadioButton
+                        android:text="正常"
+                        style="@style/check_text"/>
+
+                    <RadioButton
+                        android:text="快动作"
+                        android:layout_marginLeft="32dp"
+                        style="@style/check_text"/>
+
+                    <RadioButton
+                        android:text="慢动作"
+                        android:layout_marginLeft="32dp"
+                        style="@style/check_text"/>
+                </RadioGroup>
+            </RelativeLayout>
+
+            <include layout="@layout/padding_gray_divider"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="对焦模式"
+                    android:textColor="@color/white"
+                    android:layout_centerVertical="true"
+                    android:textSize="14sp"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_camera_focus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:layout_centerVertical="true">
+
+                    <RadioButton
+                        android:text="AF"
+                        style="@style/check_text"/>
+
+                    <RadioButton
+                        android:text="MF"
+                        android:layout_marginLeft="32dp"
+                        style="@style/check_text"/>
+                </RadioGroup>
+            </RelativeLayout>
+
+            <include layout="@layout/padding_gray_divider"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="网格"
+                    android:textColor="@color/white"
+                    android:layout_centerVertical="true"
+                    android:textSize="14sp"/>
+
+            </RelativeLayout>
+
+            <include layout="@layout/padding_gray_divider"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="录制视频"
+                    android:textColor="@color/white"
+                    android:layout_centerVertical="true"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_choose_pixels"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1080p,60fps >"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"/>
+            </RelativeLayout>
+
+            <include layout="@layout/padding_gray_divider"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="美肤"
+                    android:textColor="@color/white"
+                    android:layout_centerVertical="true"
+                    android:textSize="14sp"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_camera_skin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:layout_centerVertical="true">
+
+                    <RadioButton
+                        android:text="关闭"
+                        style="@style/check_text"/>
+
+                    <RadioButton
+                        android:text="自然"
+                        android:layout_marginLeft="32dp"
+                        style="@style/check_text"/>
+
+                    <RadioButton
+                        android:text="加强"
+                        android:layout_marginLeft="32dp"
+                        style="@style/check_text"/>
+                </RadioGroup>
+            </RelativeLayout>
+
+            <include layout="@layout/padding_gray_divider"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="延时开始"
+                    android:textColor="@color/white"
+                    android:layout_centerVertical="true"
+                    android:textSize="14sp"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_camera_delay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:layout_centerVertical="true">
+
+                    <RadioButton
+                        android:text="关闭"
+                        style="@style/check_text"/>
+
+                    <RadioButton
+                        android:text="3秒"
+                        android:layout_marginLeft="32dp"
+                        style="@style/check_text"/>
+
+                    <RadioButton
+                        android:text="5秒"
+                        android:layout_marginLeft="32dp"
+                        style="@style/check_text"/>
+
+                    <RadioButton
+                        android:text="10秒"
+                        android:layout_marginLeft="32dp"
+                        style="@style/check_text"/>
+                </RadioGroup>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:id="@+id/view_close"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
